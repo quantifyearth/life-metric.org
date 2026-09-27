@@ -30,13 +30,13 @@
   for (const n of ['life-yardstick_music', 'life-yardstick_voice'])
     window.EARLY[n] = fetch('assets/audio/' + n + '.mp3').then(r => r.ok ? r.arrayBuffer() : Promise.reject(r.status));
 </script>
-<link rel="stylesheet" href="app-dcc3ca4d44.css">
+<link rel="stylesheet" href="app-e70a8169c6.css">
 </head>
 <body>
 <script>
   // An address that names a page shows plain paper, not the story, until the
   // scripts have loaded and the page opens.
-  if (/^(how|team|papers|map|tour)(\/|$)/.test(ROUTER.now())) document.body.classList.add('arriving');
+  if (/^(how|team|papers|map|food|tour)(\/|$)/.test(ROUTER.now())) document.body.classList.add('arriving');
 </script>
 <main id="stage">
   <h1 class="sr-only">LIFE: Land-cover change Impacts on Future Extinctions</h1>
@@ -61,11 +61,12 @@
           <span class="play" aria-hidden="true">▶</span></div></div>
       <p class="lede lede-below" style="cursor: pointer">LIFE measures how the way we use land changes the risk that animals die out. For every square kilometre on Earth, it estimates the extinctions that clearing it would cause, or restoring it could prevent.</p>
       <div class="ring">
-        <button class="orb" data-go="how" style="--a: -54deg"><img alt="" src="assets/ui/magnifier.webp"><b>how it works</b></button>
-        <button class="orb" data-go="explore" style="--a: 18deg"><img alt="" src="assets/ui/map_scroll.webp"><b>explore the maps</b></button>
-        <button class="orb" data-go="papers" style="--a: 90deg"><img alt="" src="assets/ui/topic_papers.webp"><b>papers, data and code</b></button>
-        <button class="orb" data-go="team" style="--a: 162deg"><span class="set faces carousel"><img alt="" class="p0" src="assets/ui/face_eyres.webp"><img alt="" class="p1" src="assets/ui/face_balmford.webp"><img alt="" class="p2" src="assets/ui/face_madhavapeddy.webp"><img alt="" class="pin" src="assets/ui/face_swinfield.webp"></span><b>the team</b></button>
-        <button class="orb" data-go="atlas" style="--a: 234deg"><img alt="" src="assets/ui/tour.webp"><b>the guided tour</b></button>
+        <button class="orb" data-go="how" style="--a: -60deg"><img alt="" src="assets/ui/magnifier.webp"><b>how it works</b></button>
+        <button class="orb" data-go="explore" style="--a: 0deg"><img alt="" src="assets/ui/map_scroll.webp"><b>explore the maps</b></button>
+        <button class="orb" data-go="food" style="--a: 60deg"><img alt="" src="assets/ui/food_map.webp"><b>what our food costs nature</b></button>
+        <button class="orb" data-go="papers" style="--a: 120deg"><img alt="" src="assets/ui/topic_papers.webp"><b>papers, data and code</b></button>
+        <button class="orb" data-go="team" style="--a: 180deg"><span class="set faces carousel"><img alt="" class="p0" src="assets/ui/face_eyres.webp"><img alt="" class="p1" src="assets/ui/face_balmford.webp"><img alt="" class="p2" src="assets/ui/face_madhavapeddy.webp"><img alt="" class="pin" src="assets/ui/face_swinfield.webp"></span><b>the team</b></button>
+        <button class="orb" data-go="atlas" style="--a: 240deg"><img alt="" src="assets/ui/tour.webp"><b>the guided tour</b></button>
       </div>
     </div></div>
   </div>
@@ -86,6 +87,7 @@
   <a class="topic letters" href="./" aria-label="LIFE: back to the start"><span class="stack"><img alt="" src="assets/ui/letter_L.webp"><img alt="" src="assets/ui/letter_I.webp"><img alt="" src="assets/ui/letter_F.webp"><img alt="" src="assets/ui/letter_E.webp"></span><span class="lbl" aria-hidden="true">back to the start</span></a>
   <button class="topic" data-go="how" aria-label="how it works"><img alt="" src="assets/ui/magnifier.webp"><span class="lbl" aria-hidden="true">how it works</span></button>
   <button class="topic" data-go="explore" aria-label="explore the maps"><img alt="" src="assets/ui/map_scroll.webp"><span class="lbl" aria-hidden="true">explore the maps</span></button>
+  <button class="topic" data-go="food" aria-label="what our food costs nature"><img alt="" src="assets/ui/food_map.webp"><span class="lbl" aria-hidden="true">what our food costs nature</span></button>
   <button class="topic" data-go="papers" aria-label="papers, data and code"><img alt="" src="assets/ui/topic_papers.webp"><span class="lbl" aria-hidden="true">papers, data and code</span></button>
   <button class="topic people" data-go="team" aria-label="the team"><span class="stack carousel"><img alt="" class="p0" src="assets/ui/face_eyres.webp"><img alt="" class="p1" src="assets/ui/face_balmford.webp"><img alt="" class="p2" src="assets/ui/face_madhavapeddy.webp"><img alt="" class="pin" src="assets/ui/face_swinfield.webp"></span><span class="lbl" aria-hidden="true">the team</span></button>
 </nav>
@@ -97,6 +99,6 @@
 <div id="toast" role="status"></div>
 <div id="announce" class="sr-only" aria-live="polite"></div>
 <div id="pop-papers" hidden><ul class="paper-list"></ul></div>
-<script src="app-0225817c52.js"></script>
+<script src="app-515735a58e.js"></script>
 </body>
 </html>

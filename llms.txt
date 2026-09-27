@@ -24,6 +24,8 @@ This page explains LIFE through four short paper-collage films played as one sto
 - [The LIFE maps on Zenodo](https://doi.org/10.5281/zenodo.14188449): GeoTIFF files, the data of record.
 - [The LIFE store on Source Cooperative](https://source.coop/tessera/life): the same maps as a Zarr v3 store with coarser overviews, readable a region or a point at a time. Direct address: https://data.source.coop/tessera/life/v1.01 . Arrays such as `arable_0.25` and `restore_0.25` hold five bands: all species, then amphibians, birds, mammals and reptiles.
 
+- The food map on this site (`/food/<country>/<food>`) shows, for each of 176 countries, what its food costs nature, and where: for each food and each country that grows it, the share of its nature cost, LIFE's extinction opportunity cost of a year of that food (the extinctions that restoring the land it uses could prevent). The numbers are those of [Ball et al. (2025), Nature Food](https://doi.org/10.1038/s43016-025-01224-w), from the [food globe](https://github.com/quantifyearth/food-globe). For example, 95% of the harm of the United Kingdom's food falls abroad, while 2% of Brazil's does.
+
 ## Code
 
 - [LIFE](https://github.com/quantifyearth/LIFE): the pipeline that makes the maps.
@@ -45,6 +47,7 @@ Every part of the site has its own address, a path from the site's root, such as
 - `/team`: the team and collaborators.
 - `/papers`, `/papers/data`, `/papers/code`: papers, data and code.
 - `/tour`: the guided tour, a painted map of the work.
+- `/food/<country>/<food>`: the food map for a country's three-letter code, or `world`, and a food, such as `/food/gbr/beef` or `/food/world/coffee`. The foods are beef, lamb, pork, poultry, meat, milk, eggs, grains, rice, roots, pulses, soy, oil, fruit, veg, nuts, coffee, cocoa, tea and spices.
 - `/map/<lat>,<lon>,<zoom>`: the map explorer at a place, showing the map of converting land to farming; `/map/<lat>,<lon>,<zoom>/restore` shows the map of restoring it.
 
 ## Contact
