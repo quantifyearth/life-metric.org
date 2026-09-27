@@ -14,10 +14,10 @@ This page explains LIFE through four short paper-collage films played as one sto
 
 ## Papers
 
-- [LIFE: A metric for mapping the impact of land-cover change on global extinctions](https://doi.org/10.1098/rstb.2023.0327): Alison Eyres, Thomas S. Ball, Michael Dales, Thomas Swinfield, Andy Arnell, Daniele Baisero, América Paz Durán, Jonathan M. H. Green, Rhys E. Green, Anil Madhavapeddy and Andrew Balmford. Phil. Trans. R. Soc. B 380: 20230327 (2025). The method.
-- [Food impacts on species extinction risks can vary by three orders of magnitude](https://doi.org/10.1038/s43016-025-01224-w): Thomas S. Ball, Michael Dales, Alison Eyres, Jonathan M. H. Green, Anil Madhavapeddy, David R. Williams and Andrew Balmford. Nature Food 6: 848–856 (2025).
-- [Informing conservation problems and actions using an indicator of extinction risk: a detailed assessment of applying the LIFE metric](https://doi.org/10.1016/j.biocon.2025.111663): Alison Eyres, Andy Arnell, Thomas S. Ball, Richard J. Cuthbert, Michael Dales, Alejandro Guizar-Coutiño, Jody Holland, Emilio Luz-Ricca, Anil Madhavapeddy, Leila Pain, Thomas Swinfield, Thomas B. White and Andrew Balmford. Biological Conservation 315: 111663 (2026). Five uses of LIFE.
-- A general relationship between extinction risk and carrying capacity: Thomas Ball, Ben Balmford, Andrew Balmford, Daniele Rinaldo, Piero Visconti, Barry Brook and Rhys Green. In press, Nature Communications. On the shape of the curve.
+- [LIFE: A metric for mapping the impact of land-cover change on global extinctions](https://doi.org/10.1098/rstb.2023.0327): Alison Eyres, Thomas S. Ball, Michael Dales, Thomas Swinfield, Andy Arnell, Daniele Baisero, América Paz Durán, Jonathan M. H. Green, Rhys E. Green, Anil Madhavapeddy and Andrew Balmford. Philosophical Transactions of the Royal Society B: Biological Sciences 380 (1917): 20230327, January 2025. The method.
+- [Food impacts on species extinction risks can vary by three orders of magnitude](https://doi.org/10.1038/s43016-025-01224-w): Thomas S. Ball, Michael Dales, Alison Eyres, Jonathan M. H. Green, Anil Madhavapeddy, David R. Williams and Andrew Balmford. Nature Food 6: 848–856, September 2025.
+- [Informing conservation problems and actions using an indicator of extinction risk: a detailed assessment of applying the LIFE metric](https://doi.org/10.1016/j.biocon.2025.111663): Alison Eyres, Andy Arnell, Thomas S. Ball, Richard J. Cuthbert, Michael Dales, Alejandro Guizar-Coutiño, Jody Holland, Emilio Luz-Ricca, Anil Madhavapeddy, Leila Pain, Thomas Swinfield, Thomas B. White and Andrew Balmford. Biological Conservation 315: 111663, January 2026. Five uses of LIFE.
+- A general relationship between extinction risk and carrying capacity: Thomas Ball, Ben Balmford, Andrew Balmford, Daniele Rinaldo, Piero Visconti, Barry Brook and Rhys Green. Nature Communications, 2026, in press; preprint at https://doi.org/10.33774/coe-2024-m9dqp-v3. On the shape of the curve.
 
 ## Data
 
@@ -35,17 +35,17 @@ This page explains LIFE through four short paper-collage films played as one sto
 
 The code is open source. The LIFE data may not be used for commercial or revenue-generating purposes, nor redistributed in their original form, without written permission from IBAT (https://www.ibat-alliance.org/, ibat@ibat-alliance.org).
 
-## Addresses on this page
+## Addresses on this site
 
-Every part of the page has its own address, after the page's own:
+Every part of the site has its own address, a path from the site's root, such as https://life-metric.org/v/yardstick/13.1:
 
-- `#/film/<film>/<seconds>`: a moment in a film. The films are `life-yardstick` (The yardstick), `life-squares` (LIFE, square by square), `life-food` (LIFE on the menu) and `life-uses` (LIFE at work).
-- `#/trip/<id>`: a side trip: natural, vegetarian, cities, maps, curve, keep, beef, guinea, honduras or unseen.
-- `#/how`, `#/how/what`, `#/how/habitat`, `#/how/squares`, `#/how/maps`, `#/how/questions`, `#/how/watching`: How LIFE works, its frequently asked questions, and how to watch the story.
-- `#/team`: the team and collaborators.
-- `#/papers`, `#/papers/data`, `#/papers/code`: papers, data and code.
-- `#/tour`: the guided tour, a painted map of the work.
-- `#/explore/<lat>,<lon>,<zoom>/<arable|restore>`: the map explorer at a place.
+- `/v/<film>/<seconds>`: a moment in a film, such as `/v/yardstick/13.1`. The films are `yardstick` (The yardstick), `squares` (LIFE, square by square), `food` (LIFE on the menu) and `uses` (LIFE at work).
+- `/t/<id>`: a side trip: natural, vegetarian, cities, maps, curve, keep, beef, guinea, honduras or unseen.
+- `/how`, `/how/what`, `/how/habitat`, `/how/squares`, `/how/maps`, `/how/questions`, `/how/watching`: How LIFE works, its frequently asked questions, and how to watch the story.
+- `/team`: the team and collaborators.
+- `/papers`, `/papers/data`, `/papers/code`: papers, data and code.
+- `/tour`: the guided tour, a painted map of the work.
+- `/map/<lat>,<lon>,<zoom>`: the map explorer at a place, showing the map of converting land to farming; `/map/<lat>,<lon>,<zoom>/restore` shows the map of restoring it.
 
 ## Contact
 
