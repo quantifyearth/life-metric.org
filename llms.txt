@@ -1,0 +1,52 @@
+# LIFE: Land-cover change Impacts on Future Extinctions
+
+> LIFE measures how the way we use land changes the risk that animals die out. For every square kilometre of land on Earth, it estimates the extinctions that clearing it would cause, or that restoring it could prevent. It covers more than 30,000 species of mammals, birds, reptiles and amphibians. It is developed at the University of Cambridge.
+
+This page explains LIFE through four short paper-collage films played as one story, with narrated side trips, a guided tour, an explorer for the real maps, and pages on how LIFE works, the team, and the papers, data and code. The notes below give the same facts in plain text.
+
+## How LIFE works
+
+- For each species, LIFE takes its range (from the IUCN Red List or BirdLife International) and keeps the parts at heights and in habitats it can use: once on a map of today's habitats, and once on a map of the habitats there would be without people.
+- The share of its original habitat a species has left stands in for how far its population has shrunk. LIFE turns further loss or gain into a change in the species' chance of dying out within 100 years, along a curve (y = x^0.25) on which each loss hurts more when less habitat is left.
+- Summing these changes over all species for one square of land, and dividing by its area and by the number of species, gives that square's LIFE score: the change in each species' risk of extinction per square kilometre converted to cropland (LIFE-convert) or restored to natural habitat (LIFE-restore).
+- The maps are 1 arc-minute squares, about 1.9 km across at the equator. Summing squares gives reasonable estimates for changes from about 0.5 to 1,000 square kilometres.
+- LIFE counts only land vertebrates, and only the loss or gain of habitat; it does not yet include hunting, invasive species or climate change.
+
+## Papers
+
+- [LIFE: A metric for mapping the impact of land-cover change on global extinctions](https://doi.org/10.1098/rstb.2023.0327): Alison Eyres, Thomas S. Ball, Michael Dales, Thomas Swinfield, Andy Arnell, Daniele Baisero, América Paz Durán, Jonathan M. H. Green, Rhys E. Green, Anil Madhavapeddy and Andrew Balmford. Phil. Trans. R. Soc. B 380: 20230327 (2025). The method.
+- [Food impacts on species extinction risks can vary by three orders of magnitude](https://doi.org/10.1038/s43016-025-01224-w): Thomas S. Ball, Michael Dales, Alison Eyres, Jonathan M. H. Green, Anil Madhavapeddy, David R. Williams and Andrew Balmford. Nature Food 6: 848–856 (2025).
+- [Informing conservation problems and actions using an indicator of extinction risk: a detailed assessment of applying the LIFE metric](https://doi.org/10.1016/j.biocon.2025.111663): Alison Eyres, Andy Arnell, Thomas S. Ball, Richard J. Cuthbert, Michael Dales, Alejandro Guizar-Coutiño, Jody Holland, Emilio Luz-Ricca, Anil Madhavapeddy, Leila Pain, Thomas Swinfield, Thomas B. White and Andrew Balmford. Biological Conservation 315: 111663 (2026). Five uses of LIFE.
+- A general relationship between extinction risk and carrying capacity: Thomas Ball, Ben Balmford, Andrew Balmford, Daniele Rinaldo, Piero Visconti, Barry Brook and Rhys Green. In press, Nature Communications. On the shape of the curve.
+
+## Data
+
+- [The LIFE maps on Zenodo](https://doi.org/10.5281/zenodo.14188449): GeoTIFF files, the data of record.
+- [The LIFE store on Source Cooperative](https://source.coop/tessera/life): the same maps as a Zarr v3 store with coarser overviews, readable a region or a point at a time. Direct address: https://data.source.coop/tessera/life/v1.01 . Arrays such as `arable_0.25` and `restore_0.25` hold five bands: all species, then amphibians, birds, mammals and reptiles.
+
+## Code
+
+- [LIFE](https://github.com/quantifyearth/LIFE): the pipeline that makes the maps.
+- [LIFE.js](https://github.com/quantifyearth/LIFE.js): a TypeScript library to read the store and draw its maps.
+- [LIFE.py](https://github.com/quantifyearth/LIFE.py): a Python library to read the store.
+- [quantifyearth on GitHub](https://github.com/quantifyearth): the code for the papers.
+
+## Terms of use
+
+The code is open source. The LIFE data may not be used for commercial or revenue-generating purposes, nor redistributed in their original form, without written permission from IBAT (https://www.ibat-alliance.org/, ibat@ibat-alliance.org).
+
+## Addresses on this page
+
+Every part of the page has its own address, after the page's own:
+
+- `#/film/<film>/<seconds>`: a moment in a film. The films are `life-yardstick` (The yardstick), `life-squares` (LIFE, square by square), `life-food` (LIFE on the menu) and `life-uses` (LIFE at work).
+- `#/trip/<id>`: a side trip: natural, vegetarian, cities, maps, curve, keep, beef, guinea, honduras or unseen.
+- `#/how`, `#/how/what`, `#/how/habitat`, `#/how/squares`, `#/how/maps`, `#/how/questions`, `#/how/watching`: How LIFE works, its frequently asked questions, and how to watch the story.
+- `#/team`: the team and collaborators.
+- `#/papers`, `#/papers/data`, `#/papers/code`: papers, data and code.
+- `#/tour`: the guided tour, a painted map of the work.
+- `#/explore/<lat>,<lon>,<zoom>/<arable|restore>`: the map explorer at a place.
+
+## Contact
+
+To use LIFE or help to develop it, contact Andrew Balmford (https://www.zoo.cam.ac.uk/directory/andrew-balmford). Team: https://www.life.conservation.cam.ac.uk/our-people
